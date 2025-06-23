@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Lightbox CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/simplelightbox@2.12.2/dist/simple-lightbox.min.css" rel="stylesheet">
+		<style>
+			/* Gallery Container */
+			.box.alt.gallery {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+				gap: 15px;
+				padding: 20px;
+				justify-content: center;
+			}
+
+			/* Image and Video Wrapper */
+			.box.alt.gallery .media-wrapper {
+				position: relative;
+				width: 100%;
+				padding-top: 75%; /* Aspect ratio: 4:3 (adjust as needed) */
+				overflow: hidden;
+				border-radius: 5px;
+				box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+				background: #f0f0f0;
+			}
+
+			/* Standardize Image and Video Sizing */
+			.box.alt.gallery img,
+			.box.alt.gallery video {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* Ensures images and videos cover the container */
+				object-position: center; /* Center alignment */
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo">
+					<a href="index.html"><strong>RNA</strong>BAnD</a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="projects.html">Research</a></li>
+						<li><a href="Members.html">Lab Members</a></li>
+						<li><a href="Publications.html">Publications</a></li>
+						<li><a href="News.html">News</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+						<li><a href="Gallery.html">Gallery</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Section -->
+			<section class="main">
+				<header>
+					<h1>Gallery</h1>
+				</header>
+			</section>
+
+			<section>
+				<div class="box alt gallery">
+					<!-- Images -->
+
+						<a href="images/wormart2.jpg" class="gallery-item">
+						<div class="media-wrapper">
+							<img src="images/wormart2.jpg" alt="Worm Art 2" />
+						</div>
+					</a>
+
+						<a href="images/wormart.jpg" class="gallery-item">
+						<div class="media-wrapper">
+							<img src="images/wormart.jpg" alt="Worm Art" />
+						</div>
+					</a>
+				
+					<a href="images/pellet2.jpg" class="gallery-item">
+						<div class="media-wrapper">
+							<img src="images/pellet2.jpg" alt="Pellet 2" />
+						</div>
+					</a>
+
+
+					<a href="images/pellet1.jpg" class="gallery-item">
+						<div class="media-wrapper">
+							<img src="images/pellet1.jpg" alt="Pellet 1" />
+						</div>
+					</a>
+									<a href="images/pellet3.jpg" class="gallery-item">
+						<div class="media-wrapper">
+							<img src="images/pellet3.jpg" alt="Pellet 3" />
+						</div>
+					</a>
+					<a href="images/pellet4.jpg" class="gallery-item">
+						<div class="media-wrapper">
+							<img src="images/pellet4.jpg" alt="Pellet 4" />
+						</div>
+					</a>
+
+					
+					
+
+
+					<!-- Video (with mute, no controls, autoplay, and loop) -->
+					<a href="images/sample.mp4" class="gallery-item">
+						<div class="media-wrapper">
+							<video muted loop autoplay playsinline>
+								<source src="images/sample.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</a>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="Contact.html" class="icon solid alt fa-phone"><span class="label">Phone</span></a></li>
+					<li><a href="Contact.html" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<p class="copyright">&copy; In worms we trust</p>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- Lightbox JS -->
+		<script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.12.2/dist/simple-lightbox.min.js"></script>
+		<script>
+			// Initialize Lightbox
+			const lightbox = new SimpleLightbox('.gallery-item', { captions: true });
+		</script>
+	</body>
+</html>
+
